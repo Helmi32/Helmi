@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update biodata-tugas pembrograman web dasar</title>
+
+</head>
+<body> 
+<div style="background-color: #cccabc;">
+    <nav class="menu">
+      <aside class="sidebar">
+				<div style="padding: 20px;">
+				<b>Menu</b><br>
+				<hr>
+				<a href="index.html">Home</a><br />
+				<a href="#">Profile</a><br />
+				<a href="#">Update Biodata</a><br />
+				<a href="#">Jenis Joki</a><br />
+				<a href="#">Bantuan</a><br />
+        </nav>
+		</div>
+			</aside>
+</body>
+       <div style="background-color: #cccabc;">
+				<main class="content">
+				<div style="padding: 10px;">
+				<h2 style="margin: 0px;">Update Biodata </h2>
+			<hr/>
+	<form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+		<table>
+			<tr>
+				<td>ID Game</td>
+				<td>:</td>
+				<td><input type="text" name="nama" value="" placeholder="Tulisakan ID Game Anda" /><br/>
+				<small style="color: red" id="err_nama"></small>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td> <input type="password" name="password" placeholder="Tulisakan Password Anda" /><br/>
+				<small style="color: red" id="err_password"></small>
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Joki</td>
+				<td>:</td>
+				<td><input type="radio" name="jenis_joki" value="joki rank" checked /> Joki Rank
+				<input type="radio" name="jenis_joki" value="joki kda dan rank" /> Joki KDA dan Rank 
+				<input type="radio" name="jenis_joki" value="joki kda" checked /> Joki KDA
+				<br/>
+				<small style="color: red" id="err_jenis_joki"></small>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Komentar</td>
+				<td>:</td>
+				<td><textarea name="komentar" rows="5" cols="20"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1" align="right"><button> simpan</button> </td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</main>
+	</div>
+		<footer class="footer" align="center">
+			<font color="white">Copyright &#169; Pt.AA</white>
+		</footer>
+	</div>
+	</body>
+</html>
